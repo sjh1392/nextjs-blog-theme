@@ -21,9 +21,8 @@ export default function Index({ posts, globalData }) {
         <h1 className="text-3xl lg:text-5xl text-center mb-12 font-bold">
           SEO Tamworth
         </h1>
-        <p className="m-10">SEO Tamworth are your trusted partner in elevating small and local businesses to new heights through SEO and marketing solutions. In the heart of Tamworth, UK, we understand the unique challenges faced by local entrepreneurs. Our expert team specialise in optimising your online presence, ensuring your business stands out in search engines and attracts the right audience.</p>
-        <p className="m-10">From strategic keyword targeting to compelling content creation, we tailor our services to align with your business goals. Let us drive targeted traffic to your website, increase your visibility, and amplify your brand in the Tamworth community.</p>
-        
+        <p className="m-10">Working with small and local businesses, we understand the unique challenges faced by local entrepreneurs. Our expert team specialise in optimising your online presence, helping you grow your business and reach profitably.</p>
+        <p className="m-10">From strategic keyword targeting to compelling content creation, our services align with your business goals. Let us drive targeted traffic to your website, increase your visibility, and amplify your brand in the Tamworth community.</p>
 
         <h2 className="text-3xl lg:text-2xl text-center mb-12 font-bold">Book Services Online</h2>
         <p className="m-10 text-center">You can pre-book marketing services below.</p>
