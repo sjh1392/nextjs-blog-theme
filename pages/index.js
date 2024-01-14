@@ -14,14 +14,22 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
-          {globalData.blogTitle}
+        <h1 className="text-3xl lg:text-5xl text-center mb-12 font-bold">
+          SEO Tamworth
         </h1>
+        <p className="m-10">SEO Tamworth are your trusted partner in elevating small and local businesses to new heights through SEO and marketing solutions. In the heart of Tamworth, UK, we understand the unique challenges faced by local entrepreneurs. Our expert team specialise in optimising your online presence, ensuring your business stands out in search engines and attracts the right audience.</p>
+        <p className="m-10">From strategic keyword targeting to compelling content creation, we tailor our services to align with your business goals. Let us drive targeted traffic to your website, increase your visibility, and amplify your brand in the Tamworth community.</p>
+        
+
+        <h2 className="text-3xl lg:text-2xl text-center mb-12 font-bold">Book Services Online</h2>
+        <p className="m-10 text-center">You can pre-book marketing services below.</p>
+        <p className="text-sm text-center bg-blue-300 p-2 font-bold block mx-auto w-1/2 rounded-lg">Current delivery time: 14 days</p>
+
         <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
-              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
+              className="m-10 backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-20 transition border border-gray-800 border-opacity-10"
             >
               <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
@@ -45,6 +53,9 @@ export default function Index({ posts, globalData }) {
             </li>
           ))}
         </ul>
+
+        <h2 className="text-3xl lg:text-2xl text-center mb-12 font-bold">Clients</h2>
+        <p className="text-center m-10">Reviews</p>
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
